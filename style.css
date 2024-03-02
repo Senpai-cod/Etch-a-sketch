@@ -1,0 +1,17 @@
+.grid{
+    flex-grow: 1;
+                /*Why color does not work??*/
+}
+html, body{   /*To make div as large as screen*/
+    margin: 0;
+    height: 100%;
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.rows{
+    flex: 1;
+    display: flex;
+}
