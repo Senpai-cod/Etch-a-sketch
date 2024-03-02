@@ -11,5 +11,18 @@ for(let j= 0; j< 16; j++){
     const divs = document.createElement("div");
     divs.classList.add("grid");
     rows.appendChild(divs);
+
+   
 }
 }
+const colorDivs = document.querySelectorAll(".grid");
+colorDivs.forEach((divs) =>{
+divs.addEventListener("mouseover", ()=>{
+    divs.style.backgroundColor = "grey";
+
+});
+divs.addEventListener("mouseout", ()=>{
+    divs.style.backgroundColor = "white";
+
+});
+});

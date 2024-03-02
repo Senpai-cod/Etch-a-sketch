@@ -1,6 +1,7 @@
 .grid{
     flex-grow: 1;
-                /*Why color does not work??*/
+    border: 1px black solid;
+                /*Why color does not work?? because you forgot border style!!*/
 }
 html, body{   /*To make div as large as screen*/
     margin: 0;
