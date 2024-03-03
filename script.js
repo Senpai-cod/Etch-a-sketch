@@ -17,11 +17,15 @@ for(let j= 0; j< 16; j++){
 
 const colorDivs = document.querySelectorAll(".grid");
 colorDivs.forEach((divs) =>{
+    let Color;
+    let alpha = 0.1;
     divs.addEventListener("mouseover", ()=>{
-    divs.style.backgroundColor = "grey";
+    divs.style.backgroundColor = `rgba(0,0,0,${alpha})`;
+    Color = divs.style.backgroundColor;
+    alpha += 0.1;
 });
     divs.addEventListener("mouseout", ()=>{
-    divs.style.backgroundColor = "white";
+    divs.style.backgroundColor = Color; //not necessary really
 });
     });
 
@@ -53,12 +57,16 @@ for(let j= 0; j< Number(gridNum); j++){
 }
 const colorDivs = document.querySelectorAll(".grid");
 colorDivs.forEach((divs) =>{
+    let Color2;
+    let alpha2 = 0.1;
     divs.addEventListener("mouseover", ()=>{
-    divs.style.backgroundColor = "grey";
+    divs.style.backgroundColor = `rgba(0,0,0,${alpha2})`;
+    Color = divs.style.backgroundColor;
+    alpha2 += 0.1;
 
 });
     divs.addEventListener("mouseout", ()=>{
-    divs.style.backgroundColor = "white";
+    divs.style.backgroundColor = Color2;
 });
 
     });
