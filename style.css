@@ -16,3 +16,6 @@ html, body{   /*To make div as large as screen*/
     flex: 1;
     display: flex;
 }
+button{
+    flex: 1;
+}
